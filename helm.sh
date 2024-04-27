@@ -25,6 +25,6 @@ kubectl get svc -n prometheus
 kubectl edit svc stable-kube-prometheus-sta-prometheus -n prometheus
 # change ClusterIP to LoadBalancer     port: 8080  to 9090
 kubectl edit svc stable-grafana -n prometheus
-
+# change ClusterIP to LoadBalancer
 kubectl get svc -n prometheus
 
