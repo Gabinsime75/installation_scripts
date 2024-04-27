@@ -23,6 +23,7 @@ kubectl get svc -n prometheus
 
 # In order to make prometheus and grafana available outside the cluster, use LoadBalancer or NodePort instead of ClusterIP.
 kubectl edit svc stable-kube-prometheus-sta-prometheus -n prometheus
+# change ClusterIP to LoadBalancer     port: 8080  to 9090
 kubectl edit svc stable-grafana -n prometheus
 
 kubectl get svc -n prometheus
