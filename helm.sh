@@ -10,7 +10,7 @@ helm version
 helm repo add stable https://charts.helm.sh/stable
 # Add prometheus Helm repo
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm search repo prometheus-community
+# helm search repo prometheus-community
 # Create Prometheus namespace
 kubectl create namespace prometheus
 
